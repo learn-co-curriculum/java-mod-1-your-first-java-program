@@ -51,7 +51,7 @@ java SimpleSample
 - An instruction is a command for the computer. In Java, most instructions end
   with a `;`. There are notable exceptions, and we will cover them all in detail
   in upcoming units.
-- A method a grouping of instructions. We use methods to organize instructions
+- A method is a grouping of instructions. We use methods to organize instructions
   that belong together.
   - Consider for example that you wanted to explain to someone how to make
     breakfast
