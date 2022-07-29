@@ -7,16 +7,17 @@
 
 ## Executing a simple Java program
 
-- Create a folder, such as `Day1` for example
+- Create a folder called `Day1`
 - In this folder, create a file named `SimpleSample.java` - it's important that
   this file be named exactly as indicated here. It's one of the fundamental
   rules of Java.
-- Open this file with VSCode
-  - Note that when you open a `.java` file with VSCode for the first time,
-    VSCode will ask you if you want to install Java-specific extension(s). Go
-    ahead and install the suggested extension(s), but note that we will not
-    initially use VSCode to compile or run our Java code (we will explain what
-    these two terms, compile and run, mean in a later unit)
+- Open this file with IntelliJ Community Edition
+  - When you first open IntelliJ Community Edition after installing it, you will
+    see the following screen:
+    ![Welcome to IntelliJ ](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/Welcome-to-IntelliJ.png)
+  - Click "Open" and navigate to your `Day1` folder.
+  - Once in IntelliJ, you will find a file structure in the left-hand sidebar menu.
+  - Navigate to the `SimpleSample.java` file you created
 - Paste the following code in your file:
 
 ```java
@@ -31,14 +32,14 @@ public class SimpleSample {
 - In order to run our Java program, we first have to compile it, which we can do
   using the JDK command `javac <filename>`:
 
-```
+```bash
 javac SimpleSample.java
 ```
 
 - Now that the program has been compiled, we can run it using the JDK command
   `java <classname>`:
 
-```
+```bash
 java SimpleSample
 ```
 
@@ -46,7 +47,7 @@ java SimpleSample
 
 ![Sample console output](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/module-1-simple-sample-output.png)
 
-**Explanation**
+### Explanation
 
 - An instruction is a command for the computer. In Java, most instructions end
   with a `;`. There are notable exceptions, and we will cover them all in detail
@@ -96,9 +97,9 @@ Note that there are a few more lines of code in our sample class that surround
 the instruction above. We will break down what each line means in subsequent
 units
 
-## Try It Yourself!
+## Try It Yourself
 
-- Re-create basic class with a one-line statement to print a message of your
+- Re-create a basic class with a one-line statement to print a message of your
   choosing
 - Choose the name of your class and the text you want your class to output
 
