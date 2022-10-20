@@ -8,7 +8,7 @@
 
 ## Executing a simple Java program
 
-- Open up IntelliJ Community Edition.
+- Launch IntelliJ Community Edition.
   - When you first open IntelliJ Community Edition after installing it, you will
     see the following screen:
 
