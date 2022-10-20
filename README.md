@@ -55,7 +55,6 @@
 
   ![IntelliJ Run](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-play.png)
 
-
 ### Explanation
 
 - An instruction is a command for the computer. In Java, most instructions end
