@@ -30,13 +30,18 @@
       systems a little later on.
     - Select the JDK that you installed in the previous lesson when setting up
       your environment. This should be JDK 11.
+    - Ensure that the "Add Sample Code" checkbox is checked. This will add a
+      `Main.java` file to the project. For the purposes of this lesson, we will
+      have this box checked. But in the future, you may feel free to uncheck
+      this box if you do not want any sample code added to your new project.
   - Click "Create" to create the new Java project. Give IntelliJ a couple of
     minutes to create and load your new project.
 - On the left-hand side, you will see the **project view** window. This shows
   the directory structure of the project:
 
   ![Project View](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-project-view.png)
-- Notice that IntelliJ created a `Main.java` file for us under the directory
+- Since we checked the "Add Sample Code" checkbox when creating the project,
+  you will see that IntelliJ created a `Main.java` file for us under the directory
   `src/main/java/org/example`. Let's open up that file by double-clicking on it
   from the project view!
 - When you open it up you should see the following code in the `Main.java` file:
