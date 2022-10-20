@@ -2,50 +2,59 @@
 
 ## Learning Goals
 
-- Run your first Java program
-- Explain basic constructs
+- Create a Java Project in IntelliJ.
+- Run your first Java program.
+- Explain basic constructs.
 
 ## Executing a simple Java program
 
-- Create a folder called `Day1`
-- In this folder, create a file named `SimpleSample.java` - it's important that
-  this file be named exactly as indicated here. It's one of the fundamental
-  rules of Java.
-- Open this file with IntelliJ Community Edition
+- Open up IntelliJ Community Edition.
   - When you first open IntelliJ Community Edition after installing it, you will
     see the following screen:
+
     ![Welcome to IntelliJ ](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/Welcome-to-IntelliJ.png)
-  - Click "Open" and navigate to your `Day1` folder.
-  - Once in IntelliJ, you will find a file structure in the left-hand sidebar menu.
-  - Navigate to the `SimpleSample.java` file you created
-- Paste the following code in your file:
+- Click "New Project".
+  - When you do so, you will be prompted with a window like this:
 
-```java
-public class SimpleSample {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
-}
-```
+    ![New Project](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-new-project.png)
+  - Let's create a new Java project!
+    - Ensure that "New Project" is highlighted in the left-hand sidebar menu.
+    - For "Name:" enter in "first-project". This will be the name of your new
+      Java project.
+    - For "Location:" select the directory you'd like to put your project in.
+      This is where the project will live in your computer's file system.
+    - Leave "Create Git repository" unchecked. But know that by checking this
+      box, it will create a new Git repository for you.
+    - Select "Java" for the language.
+    - Select "Maven" for the build system. You will learn more about build
+      systems a little later on.
+    - Select the JDK that you installed in the previous lesson when setting up
+      your environment. This should be JDK 11.
+  - Click "Create" to create the new Java project. Give IntelliJ a couple of
+    minutes to create and load your new project.
+- On the left-hand side, you will see the **project view** window. This shows
+  the directory structure of the project:
 
-- In your terminal, make sure you are inside your `Day1` folder
-- In order to run our Java program, we first have to compile it, which we can do
-  using the JDK command `javac <filename>`:
+  ![Project View](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-project-view.png)
+- Notice that IntelliJ created a `Main.java` file for us under the directory
+  `src/main/java/org/example`. Let's open up that file by double-clicking on it
+  from the project view!
+- When you open it up you should see the following code in the `Main.java` file:
 
-```bash
-javac SimpleSample.java
-```
+  ![Java Hello World](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-hello-world.png)
+- If we want to compile and run this code, we can do so easily from IntelliJ!
+  On line 3 or 4 of the code, notice there is a green triangle or play button.
+  Click the play button and then choose "Run 'Main.main()'":
 
-- Now that the program has been compiled, we can run it using the JDK command
-  `java <classname>`:
+  ![Run program](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-run-main.png)
+- This will build the code and then execute it! When the program has run,
+  you will see a window pop up towards the bottom of IntelliJ. You should see
+  that the program printed `Hello world!`
+- We could also run the code by pressing the green play button in the
+  upper-right hand corner of IntelliJ:
 
-```bash
-java SimpleSample
-```
+  ![IntelliJ Run](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-play.png)
 
-- You should see the `Hello World` text in your console:
-
-![Sample console output](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/module-1-simple-sample-output.png)
 
 ### Explanation
 
@@ -90,12 +99,42 @@ Put it all together, and you have the following line from our sample class
 above:
 
 ```java
-System.out.println("Hello World");
+System.out.println("Hello world!");
 ```
 
 Note that there are a few more lines of code in our sample class that surround
 the instruction above. We will break down what each line means in subsequent
-units
+units.
+
+## Install the Java Visualizer Plugin
+
+Now that we have IntelliJ set up a bit more for us, let's install a helpful
+plugin called the **Java Visualizer**. The Java visualizer is a tool that can be
+used to show what may be happening in the computer's memory when running and
+debugging a program. We will install the Java Visualizer into our IntelliJ IDE.
+
+### Action Item
+
+1. In IntelliJ, navigate to File -> Settings or use the keyboard shortcut
+   `Ctrl+Alt+S`:
+
+   ![IntelliJ Settings](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-settings.png) 
+2. In the "Settings" window, select "Plugins" from the left-hand sidebar menu
+   and search for "Java Visualizer":
+
+   ![IntelliJ Plugins](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-plugins.png)
+3. Click the green "Install" button next to the plugin to install it.
+4. Once installed, at the bottom of the "Settings" window, click "OK".
+
+Now if you open up your `Main.java` and click the little green bug icon next to
+the green play button, you can run the program in debug mode.
+
+![IntelliJ Debug](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-debug.png)
+
+When we run in debug mode, a window will again appear towards the bottom of
+IntelliJ. But now we should see the Java Visualizer plugin that we installed!
+
+![IntelliJ Java Visualizer](https://curriculum-content.s3.amazonaws.com/java-mod-1/your-first-java-program/intellij-java-visualizer.png)
 
 ## Try It Yourself
 
