@@ -64,36 +64,36 @@
 - A method is a grouping of instructions. We use methods to organize instructions
   that belong together.
   - Consider for example that you wanted to explain to someone how to make
-    breakfast
+    breakfast.
   - You may need to provide that person instructions on how to make toast, how
-    to make eggs and how to make a smoothie
+    to make eggs and how to make a smoothie.
   - Since you still want to be able to say "make me breakfast, please", and have
     that person understand that it means "make toast", "make eggs", and "make a
     smoothie", you would group all those individual instructions in a single
-    method
+    method.
   - That method might be called `makeBreakfast()`
   - We will cover the exact syntax for a method and for the instructions inside
-    that method in a later unit
+    that method in a later unit.
 - A class is a grouping of methods. In our previous `makeBreakfast()` example,
   we might have a class that represents a chef, and that class may contain the
   instructions to `makeBreakfast()` as well as the instructions to `makeLunch()`
-  and `makeDinner()`
+  and `makeDinner()`.
 - Java comes with some pre-defined methods that we get to use to access existing
-  functionality
+  functionality.
   - For example, Java gives us pre-defined methods to print characters to the
     screen, perform standard math operations, or even send data over a network
-    connection
+    connection.
 - Dot notation: access a specific method inside a specific class (we will
-  discuss the difference between a class and an object in a later unit)
-- Example: `System.out.println()`
-  - `System` is a class that comes with the JDK
-  - `out` is an object in that class
-  - `println` is a method on that object
-  - The `()` allow us to pass information to the method
-- A parameter is information we pass to a method
+  discuss the difference between a class and an object in a later unit).
+- Example: `System.out.println()`.
+  - `System` is a class that comes with the JDK.
+  - `out` is an object in that class.
+  - `println` is a method on that object.
+  - The `()` allow us to pass information to the method.
+- A parameter is information we pass to a method.
 - In our example, we are passing the text we want to print on the screen to the
-  `println` method
-- Finally, the `;` is how most instructions end in Java
+  `println` method.
+- Finally, the `;` is how most instructions end in Java.
 
 Put it all together, and you have the following line from our sample class
 above:
